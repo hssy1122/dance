@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Changing clothes: TPO</title>
+
+	<style type="text/css">
+		body{margin: 0;}
+		.wrap{width: 1000px; margin:auto;}
+		.flex {display: flex;}
+		.bg-blue{background-color: blue;}
+		.bg-red{background-color: red;}
+		.bg-yellow{background-color: yellow;}
+		.bg-gray{background-color: gray}
+		.bg-black{background-color: black;}
+		.col-1{height: 1080px; margin:auto;}
+		.col-2{height: 795px; width: 243px; margin-left: 839px; margin-top: 200px;}
+		.col-3{height: 300px; width: 240px; margin-left: 900px; margin-top: -615px; position: absolute; z-index: 1;}
+		.col-4{height:325px; width: 180px; margin-left: 925px; margin-top: -355px; z-index: 0; position: absolute; z-index: 0;}
+		.col-5{height: 75px; width: 243px; margin-left: 945px; margin-top: -38px;}
+		.bg-section1{background: url(dance.jpg);
+		background-size: 100% auto;
+		padding-top: 60px;}
+		.bg-section2{background: url(man1.png);
+		background-size: 100% auto;}
+	</style>
+
+</head>
+<body>
+	<section>
+		<div class="col-1 bg-section1">
+			<div class="col-2 bg-section2 flex"></div>
+			<div class="col-3" style="scale: 155%;"><img id="body" src="man2_body.png" style="position: absolute; z-index: 1;"></div>
+				<div class="col-4" style="scale: 155%;"> <img id="leg" src="man2_leg.png" style="position: absolute; z-index: 0;"></div>
+					<div class="col-5" style="scale: 160%;"><img id="sh" src="man2_sh.png"></div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		body.onclick = function(){
+			body.src = "man3_body.png";
+
+		}
+		leg.onclick = function(){
+			leg.src = "man3_leg.png";
+		}
+		sh.onclick = function(){
+			sh.src = "man3_sh.png";
+		}
+	</script>
+</body>
+</html>
